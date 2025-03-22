@@ -1,0 +1,33 @@
+# Go-specific ignore
+/bin/
+/pkg/
+/vendor/
+*.exe
+*.out
+*.test
+
+# Logs and debugging
+*.log
+*.bak
+*.swp
+debug/
+logs/
+
+# Config & Secrets
+config.json
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+
+# os-specific files
+.DS_Store
+Thumbs.db
+
+# Git ignore for dependency management
+go.sum
+go.mod
