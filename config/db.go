@@ -13,7 +13,7 @@ var DB *sql.DB
 func ConnectDB() {
 	// 🚀 Hardcoded Database Credentials
 	dbUser := "root"
-	dbPass := "system"
+	dbPass := "Alawa@3282"
 	dbHost := "127.0.0.1"
 	dbPort := "3306"
 	dbName := "social_chat"
