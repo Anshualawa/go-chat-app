@@ -1,4 +1,4 @@
-package utils
+package golang_social_chat
 
 import (
 	"encoding/json"

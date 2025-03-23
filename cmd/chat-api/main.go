@@ -4,7 +4,6 @@ import (
 	"context"
 	"fmt"
 	"golang-social-chat/config"
-	"golang-social-chat/routes"
 	L "log/slog"
 	"net/http"
 	"os"
@@ -38,7 +37,7 @@ func main() {
 	r.Use(middleware.RedirectSlashes)
 	r.Use(middleware.SetHeader("Content-Type", "application/json; charset=utf-8"))
 
-	routes.DefineChatRoutes(r)
+	DefineChatRoutes(r)
 
 	// Create the server
 	addr := fmt.Sprintf("%s:%d", Cfg.Address, Cfg.Port)

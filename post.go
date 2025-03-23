@@ -1,4 +1,4 @@
-package controllers
+package golang_social_chat
 
 import (
 	"encoding/json"
