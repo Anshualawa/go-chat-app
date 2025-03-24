@@ -9,6 +9,7 @@ import (
 func DefineChatRoutes(r *chi.Mux) {
 	r.Post("/register", gsc.RegisterUser)
 	r.Post("/login", gsc.LoginUser)
+	r.Post("/logout", gsc.LogoutUser)
 	r.Post("/chat/send", gsc.SendMessage)
 	r.Get("/chat/history", gsc.GetMessages)
 	r.Post("/post", gsc.AddPost)
